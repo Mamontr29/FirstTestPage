@@ -1,6 +1,6 @@
 html {
     width: 1200px;
-    
+    margin: 0, 0;
     font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
     font-family: 'PT Sans Narrow', sans-serif; /*Шрифт основной*/
     /*background-color: #bfa0df; /*Цвет фона всего документа */
@@ -10,19 +10,32 @@ html {
 header {
   width: 1200px;
   height: 150;
-  
   margin: 0, 0;
   
 
 }
+body {
+  background-image: url("background1.jpg"); /*фоновое изображение для body*/
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  width: auto;/*заставляет тело быть всегда 1000 пикселей в ширину*/
+  margin: 10px, 15px;
+  padding: 5 auto; /*у нас есть четыре значения, установленные для padding, чтобы сделать немного пространства вокруг нашего контента. В этот раз мы не устанавливаем padding на верхней части тела, но делаем 20 пикселей слева, снизу и справа. Значения устанавливаются сверху, справа, снизу, слева, в таком порядке.*/
+  border: 5px solid black;/*просто устанавливает сплошную чёрную рамку шириной 5 пикселей со всех сторон тела.*/
+  /*background-color: #ec9e0d;*/
+}
 h1 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
   margin: 0, 0;
+  font-weight: bold;
   font-family: 'Pacifico', cursive; /*Шрифт для выделенного блока*/
   font-size: 60px; /*Размер шрифта*/
   text-align: center;/*Положение относительно ширины по горизонтали */
   color: #bfa0df;/*цвет текста*/
   text-shadow: 4px 4px 2px black;/*тень для текста*/
-}
+  }
 
 h2 {
     font-family: 'Pacifico', cursive;/*Шрифт для выделенного блока*/
@@ -38,16 +51,7 @@ p, li {
     letter-spacing: 0.5px; /*расстояние между символами*/
     color: whitesmoke;
   }
-  body {
-    background-image: url("background1.jpg"); /*фоновое изображение для body*/
-    background-repeat: no-repeat;
-    background-clip: padding-box;
-    width: auto;/*заставляет тело быть всегда 1000 пикселей в ширину*/
-    margin: 10px, 15px;
-    padding: 5 auto; /*у нас есть четыре значения, установленные для padding, чтобы сделать немного пространства вокруг нашего контента. В этот раз мы не устанавливаем padding на верхней части тела, но делаем 20 пикселей слева, снизу и справа. Значения устанавливаются сверху, справа, снизу, слева, в таком порядке.*/
-    border: 5px solid black;/*просто устанавливает сплошную чёрную рамку шириной 5 пикселей со всех сторон тела.*/
-    /*background-color: #ec9e0d;*/
-  }
+ 
   img {
     display: block;
     margin: 0 auto;
