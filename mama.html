@@ -2,16 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Пономарева Тамара Игоревна</title>
 
     <meta name="author" content="Пономарев Андрей Владимирович">
-    <meta name="description" content="Страница посвещена моей жене Пономареврй Тамаре Игоревне">
+    <meta name="description" content="Страница посвящена моей жене Пономареврй Тамаре Игоревне">
 
   </head>
   <body>
     <h1>Здравствуйте, меня зовут Тамара.</h1>
 
     <img src="images/mamatomav3.jpg">
+
+    <picture>     <!--если ширина экрана до 800 пик одно изображение которое в виде портрета после другое-->
+        <source media="(max-width: 799px)" srcset="images/mama480wportrait.jpg">
+        <source media="(min-width: 800px)" srcset="images/mama800w.jpeg">
+        <img src="images/mamatomav3.jpg">
+    </picture>
 
     <h2 id="КонтактыМама">Контактная информация</h2>
     <p> 
