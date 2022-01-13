@@ -21,14 +21,22 @@
         <source media="(min-width: 800px)" srcset="images/mama800w.jpeg">
         <img src="images/mamatomav3.jpg">
     </picture>
-    <p>Сравните качество фотографии при приближении, первая не изменяется</p>
+    <p>При просмотре на разных экранах, открываются файлы разного разрешение. Первое фото не изменяется</p>
 
       <img src="images/mama-leto-800w.jpg" alt="Тамара в парке Айвазовский">
 
-      <img srcset="images/mama-leto-800w.jpg,
-                    images/mama-leto-1400.jpg, 1.5x,
-                    images/mama-leto-2k.jpg, 2x" 
-                    src="images/mama-leto-800w.jpg" alt="Тамара в парке Айвазовский">
+      <img srcset="images/mama-leto-480w.jpg 480w,
+
+      images/mama-leto-640px.jpg 640w,
+
+      images/mama-leto-800w.jpg 800w"
+
+sizes="(max-width: 500px) 480px,
+
+       (max-width: 660px) 640px,
+
+       800px"
+src="images/mama-leto-800w.jpg" alt="Тамара в парке Айвазовский">
 
     <h2 id="КонтактыМама">Контактная информация</h2>
     <p> 
