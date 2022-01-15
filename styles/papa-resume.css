@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto:ital@1&display=swap');
+/* 
+Обращение ко всем элементам с отменой паддинга и маржина
+* {
+  padding: 0;
+  margin: 0;
+} */
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: rgb(133, 131, 131);
+  text-decoration: none;
+}
+a:hover { /*стиль при наведении на ссылку*/
+  color: blueviolet;
+}
+a:active {  /*стиль для посещенных ссылок*/
+  color: aqua;
+}
+
+.foto {
+  width: 200px; 
+  border-radius: 15px; /*скругление углов фото*/
+  box-shadow: 20px 6px 20px 5px rgb(31, 11, 51); /*тень от фотографии*/
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.info p {
+  color: rgb(29, 20, 20);
+  margin: 0;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 750px; /*максимальная ширина страницы*/
+  margin: auto; /*посередине страницы*/
+}
+    /*Box Model*/
+.contacts {
+    background-color: silver;
+    padding: 15px 40px;
+    border: 5px  ridge blueviolet;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* 
+  .box-model > div { /*только к дивам первого уровня*
+  float: right;  /*блоки горизонтально *
+  background-color: blueviolet;
+  height: 100px;
+  width: 25%; /*ширина элемента 25% общей ширины*
+  border: 4px solid black;
+  box-sizing: border-box; /*размеры берутся по бордеру, по умолчанию шиирна по содержимому*
+} 
+*/
+.bg-yellow {
+  background-color: rgb(240, 240, 77);
+}
+.bg-green {
+  background-color: rgb(130, 231, 130);
+}
+.bg-red {
+  background-color: rgb(236, 136, 136);
+}
+.card {
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20px;
+}
+.list li {
+  color: rgb(133, 131, 131);
+}
+.table {  /*Свойства все таблицы. Расстянуть во всю ширину*/
+  width: 100%;
+}
+.table td {
+  padding: 3px;
+}
+/*выбор спомощью псевдо селеторов td первой и второй колонки*/
+.table td:nth-child(2), td:nth-child(3) {
+  color: rgb(133, 131, 131);
+}
+
+/*выбирает каждую четную tr*
+.table tr:nth-child(even) {
+  color: bisque;
+} */
