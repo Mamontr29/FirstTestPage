@@ -1,60 +1,116 @@
-html {
-    width: 1200px;
-    margin: 0, 0;
-    font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-    font-family: 'PT Sans Narrow', sans-serif; /*Шрифт основной*/
-    /*background-color: #bfa0df; /*Цвет фона всего документа */
-}
+/*Импорт шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 
-header {
-  width: 1200px;
-  height: 150;
-  margin: 0, 0;
-  
 
-}
 body {
-  background-image: url("background1.jpg"); /*фоновое изображение для body*/
-  background-repeat: no-repeat;
-  background-clip: padding-box;
-  width: auto;/*заставляет тело быть всегда 1000 пикселей в ширину*/
-  margin: 10px, 15px;
-  padding: 5 auto; /*у нас есть четыре значения, установленные для padding, чтобы сделать немного пространства вокруг нашего контента. В этот раз мы не устанавливаем padding на верхней части тела, но делаем 20 пикселей слева, снизу и справа. Значения устанавливаются сверху, справа, снизу, слева, в таком порядке.*/
-  border: 5px solid black;/*просто устанавливает сплошную чёрную рамку шириной 5 пикселей со всех сторон тела.*/
-  /*background-color: #ec9e0d;*/
+  font-size: 15px;
+    font-family:'Roboto', sans-serif;
+  margin: 0px;
+}
+.conteiner {
+  width: 1000px;
+  margin: auto;
+  background-color: rgb(243, 220, 174);
+}
+img {
+  width: 80%;
+}
+/*Название сайта двигается с экарном*/
+.header {
+  position: relative;
+  width: inherit;
+}
+.header .box  {
+  position: fixed;
+  width: inherit;
+  height: 3em;
+  background-color: forestgreen;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px black;
+  margin-bottom: 5px;
 }
 h1 {
-  display: block;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin: 0, 0;
-  font-weight: bold;
-  font-family: 'Pacifico', cursive; /*Шрифт для выделенного блока*/
-  font-size: 60px; /*Размер шрифта*/
-  text-align: center;/*Положение относительно ширины по горизонтали */
-  color: #bfa0df;/*цвет текста*/
-  text-shadow: 4px 4px 2px black;/*тень для текста*/
-  }
-
-h2 {
-    font-family: 'Pacifico', cursive;/*Шрифт для выделенного блока*/
-    font-size: 40px;/*Размер шрифта*/
-    text-align: center;/*Положение относительно ширины по горизонтали */
-    color: whitesmoke;/*цвет текста*/
-    text-shadow: 4px 4px 2px black;/*тень для текста*/
+  margin: 0px;
+  font-family: 'Caveat', cursive;
+  color: blueviolet;
 }
-p, li {
+/*Меню двигается с экраном*/
+.nav{
+  width: inherit;
+  position: relative;
+}
+.nav > div {
   
-    font-size: 20px;/*Шрифт для выделенного блока*/
-    line-height: 1;/*межстрочный интервал*/
-    letter-spacing: 0.5px; /*расстояние между символами*/
-    color: whitesmoke;
-  }
- 
-  img {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-  }
+  position: fixed;
+  top: 50px;
+  float: left;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 50px;
+  /* background: red; */
+  /* box-shadow: 1px 2px 3px black; */
+  /* border-radius: 5px; */
+}
+.nav > div > div {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  height: 50px;
+  background: green;
+  box-shadow: 1px 2px 3px black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* .nav #nav1 {
+  position: fixed;
+  top: 50px;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50px;
+  background: forestgreen;
+  box-shadow: 1px 2px 3px black;
+  border-radius: 5px;
+}
+.nav #nav2 {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50px;
+  background: forestgreen;
+  box-shadow: 1px 2px 3px black;
+  border-radius: 5px;
+} */
+h2 {
+  text-align: center;
+}
+p {
+  padding-left: 10px;
+}
+.text {
+  padding-top: 110px;
+}
+.textfoto  p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-bottom: 30px;
+}
+.foto {
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px 20px red;
+}
+.mainfoto {
+  display: block;
+  text-align: center;
+}
+
+
