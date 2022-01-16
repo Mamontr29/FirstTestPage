@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/papa-resume.css">
-
+    <meta name="viewport" content="width=device-width">
     <title>Пономарев Андрей Владимирович</title>
   </head>
   <body>
     <div class="container">
       <div class="info">
-        <img class="foto" src="images/avatar.jpg" alt="Тут моя фотка"/>
-        <h1><strong>Пономарев Андрей</strong></h1>
-        <p>Я хочу начать карьеру в веб-разработке</p>
-        <p>Я люблю путешествовать, ходить на рыбалку, проводить время с своей семьей.</p>
+         <img class="foto" src="images/avatar.jpg" alt="Тут моя фотка"/>
+        
+        <div class="info-text">
+          <h1><strong>Пономарев Андрей</strong></h1>
+          <p>Я хочу начать карьеру в веб-разработке</p>
+          <p>Я люблю путешествовать, ходить на рыбалку, проводить время с своей семьей.</p>
+        
         <h4>Мои контакты</h4>
         <a href="https://vk.com/id3270213" title="Страница ВКонтакте" target="_blank">ВКонтакте</a>
           /
         <a href="mailto:ponomarevmag@gmail.com" title="Напиши мне письмо">E-mail: ponomarevmag@gmail.com</a>
+        </div>
       </div>
       <div class="card bg-yellow">
         <h4>Хобби</h4>
@@ -24,16 +28,6 @@
           <li>Автомобили</li>
           <li>Рыбалка</li>
           <li>Путешествия</li>
-        </ol>
-      </div>
-      <div class="card bg-green">
-        <h4>Проекты</h4>
-        <ol class="list">
-        <li>
-          <a href="https://mamontr29.github.io/FirstTestPage/" title="Сайт посвященный моей семье" target="_blank">Сайт посвященный моей семье</a>
-        </li>
-        <li>
-          <a href="" title="Мое резюме" target="_blank">Мое резюме</a></li>
         </ol>
       </div>
       <div class="card bg-red">
@@ -61,20 +55,46 @@
           </tr>
         </table>
       </div>
-      <div class="card">
+      <div class="card bg-red">
+          <h4>Ссылки на используемый материал при обучении</h4>
+          <ul class="link-list">
+            <li><a href="https://youtu.be/SpCUuyZZTp8">CSS для Начинающих - Практический Курс</a></li>
+            <li><a href="https://youtu.be/DOEtVdkKwcU">HTML для Начинающих - Практический Курс</a></li>
+          </ul>
+      </div>
+      <div class="card bg-green">
+        <h4>Проекты</h4>
+        <ol class="list">
+        <li>
+          <a href="https://mamontr29.github.io/FirstTestPage/" title="Сайт посвященный моей семье" target="_blank">Сайт посвященный моей семье</a>
+        </li>
+        <li>
+          <a href="" title="Мое резюме" target="_blank">Мое резюме</a></li>
+        </ol>
+      </div>
+        <div class="contactme">
         <h4>Как можно связаться со мной</h4>
         <form action="">
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" placeholder="Введите имя"/>
-        <br>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="Введите E-mail" />
-        <br>
-          <label for="text">Ваше сообщение</label>
-        <br>
-          <textarea name="text" id="" cols="30" rows="10"> </textarea>
-          <input type="submit" value="Связаться" />
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Введите имя"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш е-mail</label>
+              <input type="email" id="email" placeholder="Введите е-mail" />
+            </div>
+          </div>
+          <div class="form-group">  
+            <label for="text">Ваше сообщение</label>
+            <textarea name="text"> </textarea>
+          </div>
+
+          
+          
+            <input class="btm" type="submit" value="Связаться" />
           <!--Кнопка подтверждения-->
+          
         </form>
       </div>
 
@@ -85,6 +105,9 @@
     <input type="checkbox"> <br>
     <input type="radio"> <br>
     <input type="range"> -->
+    <div class="position">
+      <div class="box"></div>
+    </div>
   </div>
   </body>
 </html>
