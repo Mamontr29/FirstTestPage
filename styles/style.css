@@ -26,7 +26,7 @@ img {
   position: fixed;
   width: inherit;
   height: 3em;
-  background-color: forestgreen;
+  background-color: rgb(92, 165, 92);
   text-align: center;
   border-radius: 5px;
   box-shadow: 6px 4px 10px 1px red;
@@ -35,7 +35,7 @@ img {
 h1 {
   margin: 0px;
   font-family: 'Caveat', cursive;
-  color: blueviolet;
+  color: rgb(104, 6, 196);
 }
 /*Меню двигается с экраном*/
 .nav{
@@ -59,12 +59,12 @@ h1 {
   box-sizing: border-box;
   width: 25%;
   height: 50px;
-  background: forestgreen;
+  background: rgb(92, 165, 92);
   box-shadow: 6px 4px 10px 1px red;
   border-radius: 5px;
   text-align: center;
   font-family: 'Caveat', cursive;
-  color: blueviolet;
+  color: rgb(104, 6, 196);
   font-size: 1.5em;
   font-weight: 500;
 }
