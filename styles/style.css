@@ -2,96 +2,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-
-
 body {
+  width: 80%;
+  /* background-color: aqua; */
   font-size: 15px;
-    font-family:'Roboto', sans-serif;
-  margin: 0px;
+  margin:0;
+  font-family:'Roboto', sans-serif;
+  margin-left: 5em;
+
+
 }
 .conteiner {
-  width: 1000px;
   margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  width: auto;
   background-color: rgb(243, 220, 174);
 }
 img {
   width: 80%;
 }
-/*Название сайта двигается с экарном*/
-.header {
-  position: relative;
-  width: inherit;
-}
-.header .box  {
-  position: fixed;
-  width: inherit;
-  height: 3em;
-  background-color:greenyellow;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 6px 4px 10px 1px red;
-  margin-bottom: 1px;
-}
-h1 {
-  margin: 0px;
+h1, .nav {
+  margin: unset;
   font-family: 'Caveat', cursive;
   color: rgb(104, 6, 196);
 }
-/*Меню двигается с экраном*/
-.nav{
-  width: inherit;
+.header {
+  box-sizing: border-box;
+  padding-right: 1em;
+  width: auto;
   position: relative;
 }
-.nav > div {
-  
+/*фиксирует на экране полосу с названием*/
+.header > .head  {
+  box-sizing: border-box;
+  left: 5em;
+  width: 80%;
+  height: 3em;
   position: fixed;
-  top: 50px;
-  float: left;
-  box-sizing: border-box;
-  width: 1000px;
-  height: 50px;
-  /* background: red; */
-  /* box-shadow: 1px 2px 3px black; */
-  /* border-radius: 5px; */
+  text-align: center;
+  border: 1px solid black;
+  background-color: khaki;
+  border-radius: 0.5em;
 }
-.nav > div > div {
-  float: left;
+/*фиксирует полосу на экране в которой мы вставим пункты меню*/
+.header > .nav  {
+  display: flex;
   box-sizing: border-box;
+  left: 5em;
+  top: 3em;
+  width: 80%;
+  /* height: 6em; */
+  position: fixed;
+}
+/*рисует в фиксированной полосе боксы по пункты меню*/
+.header > .nav > .nav1  {
+  float: right;
+  box-sizing: border-box;
+  top: 500px;
   width: 25%;
   height: 50px;
-  background: greenyellow;
-  box-shadow: 6px 4px 10px 1px red;
-  border-radius: 5px;
   text-align: center;
-  font-family: 'Caveat', cursive;
-  color: rgb(104, 6, 196);
-  font-size: 1.5em;
-  font-weight: 500;
+  border: 1px solid black;
+  background-color: khaki;
+  border-radius: 0.5em;
 }
 
-/* .nav #nav1 {
-  position: fixed;
-  top: 50px;
-  float: left;
-  box-sizing: border-box;
-  width: 50%;
-  height: 50px;
-  background: forestgreen;
-  box-shadow: 1px 2px 3px black;
-  border-radius: 5px;
-}
-.nav #nav2 {
-  position: fixed;
-  top: 50px;
-  left: 50%;
-  float: left;
-  box-sizing: border-box;
-  width: 50%;
-  height: 50px;
-  background: forestgreen;
-  box-shadow: 1px 2px 3px black;
-  border-radius: 5px;
-} */
 h2 {
   text-align: center;
 }

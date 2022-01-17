@@ -169,6 +169,7 @@ margin-right: 0px;
 .btm:hover {
   opacity: 0.5; /*при на ведении на элемент покрывается слоем непрозрачности степени 0,5*/
 }
+
  /*Позиция игра*
  .position {
   position: relative;
